@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('./img/Gambar1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif; /* Ganti dengan font yang Anda inginkan */
+}
+
+.navbar {
+  background-color: rgb(0, 89, 255);
+}
+
+.navbar-brand {
+  font-weight: normal; 
+  padding: 15px; 
+  color: #ffffff; 
+}
+
+.navbar-brand:active {
+  color: #ffffff; 
+  transition: color 0.3s; 
+}
+.navbar-brand:active {
+  color: rgb(255, 239, 16);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #000000;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0, 40, 110);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px ; 
+  z-index: 999; 
+}
+
+div.row {
+  max-height: calc(400vh - 100px); 
+  overflow-y: auto; 
+}
+
+div.user-list {
+  padding-bottom: 200px; 
+}
+
+.content {
+  padding-top: 60px; 
+}
+
+.text-center {
+  padding-top: 10px;
+  font-size: 40px; 
+  font-weight: bold; 
+}
+
+
+.row {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.row2 {
+  padding-bottom: 0px;
+  font-family: poppins;
+  font-size: 22px;
+}
+
+.roww {
+  padding-bottom: 20px;
+  font-family: poppins;
+  font-size: 17px;
+}
+
+.number-selector {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.decrement,
+.increment {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #fff; 
+}
+
+.decrement:focus,
+.increment:focus {
+  outline: none;
+}
+
+.decrement:active,
+.increment:active {
+  background-color: #e0e0e0; 
+}
+
+.gender-radio {
+  display: flex;
+}
+
+.gender-radio label {
+  margin-right: 20px;
+}
+
+.gender-radio input[type="radio"] {
+  margin-right: 5px;
+}
+
+.notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(71, 71, 71, 0.8); /* Gunakan nilai alpha (transparansi) pada warna */
+  border: 1px solid #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  color: #ffffff; /* Warna teks */
+  text-align: center;
+  border-radius: 8px;
+}
+
+.notification-checkmark {
+  font-size: 36px;
+  color: #4caf50; /* Warna hijau untuk centang (bisa disesuaikan) */
+  margin-bottom: 10px;
+}
+
+.notification p {
+  margin: 10px 0;
+}
+
+.btn-primary {
+  background-color: #4caf50; /* Warna hijau untuk tombol primary (bisa disesuaikan) */
+  color: #ffffff; /* Warna teks tombol */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #45a049; /* Warna saat tombol dihover (bisa disesuaikan) */
+}
+
+
+.btn {
+  margin-top: 10px;
+}
+/* ListUserComponent.css */
+
+.table {
+  background-color: rgba(255, 255, 255, 0.8); /* Warna putih dengan tingkat transparansi */
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #f5f5f5;
+}
